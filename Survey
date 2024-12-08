@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Formulario de registro de paciente</h1>
+    <p id="description">Llena este formulario para darte de alta:</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label"
+          >Nombre:
+          <input
+            id="name"
+            type="text"
+            placeholder="Escribe tu nombre completo"
+            required
+          />
+        </label>
+        <label id="email-label"
+          >Email:
+          <input
+            id="email"
+            type="email"
+            placeholder="Escribe un Email valido"
+            required
+          />
+        </label>
+        <label id="number-label"
+          >Edad:
+          <input
+            id="number"
+            type="number"
+            min="18"
+            max="99"
+            placeholder="Edad"
+            required
+          />
+        </label>
+        <label id="phone-label"
+          >Telefono:
+          <input
+            id="phone"
+            type="number"
+            placeholder="(55)55-55-55-55"
+            required
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Selecciona tu genero:</legend>
+        <label id="gender-label"
+          >Femenino
+          <input
+            id="gender"
+            type="radio"
+            name="femenino-masculino"
+            value="femenino"
+            checked
+            class="inline"
+          />
+        </label>
+        <label id="gender-label"
+          >Masculino
+          <input
+            id="gender"
+            type="radio"
+            name="femenino-masculino"
+            value="masculino"
+            class="inline"
+          />
+        </label>
+        <label id="description-label"
+          >Describe tus objetivos:
+          <textarea
+            id="description"
+            rows="3"
+            cols="30"
+            placeholder="Mis objetivos son..."
+          >
+          </textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>¿Como seran las consultas?:</legend>
+        <label id="presencial-label"
+          >Presencial
+          <input
+            id="presencial"
+            type="checkbox"
+            value="presencial"
+            class="inline"
+          />
+        </label>
+        <label id="online-label"
+          >En linea
+          <input id="online" type="checkbox" value="online" class="inline" />
+        </label>
+        <label id="dropdown-label"
+          >Como te enteraste:
+          <select id="dropdown">
+            <option value="">(selecciona uno)</option>
+            <option value="1">Instagram</option>
+            <option value="2">Tik Tok</option>
+            <option value="3">Referido</option>
+          </select>
+        </label>
+      </fieldset>
+      <button id="submit" type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
